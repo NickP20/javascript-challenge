@@ -21,7 +21,7 @@ d3.select("body").on("keypress", function(){
 
 buildtable(tableData);
 
-// BONUS: Refactor to use Arrow Functions!
+//Arrow function for table
 function buildtable(tdata){ 
     tbody.html("");
     tdata.forEach((ufoSighting) => {

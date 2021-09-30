@@ -21,7 +21,7 @@ d3.select("body").on("keypress", function(){
 
 buildtable(tableData);
 
-// BONUS: Refactor to use Arrow Functions!
+//Arrow Function for table
 function buildtable(tdata){ 
     tbody.html("");
     tdata.forEach((ufoSighting) => {
@@ -55,13 +55,13 @@ function runEnter() {
   if(inputcity){
     filteredData= filteredData.filter(ufoSighting => ufoSighting.city === inputcity);
     }
-    if(inputstate){
+  if(inputstate){
         filteredData= filteredData.filter(ufoSighting => ufoSighting.state === inputstate);
     }
-    if(inputcountry){
+  if(inputcountry){
         filteredData= filteredData.filter(ufoSighting => ufoSighting.country === inputcountry);
     }
-    if(inputshape){
+  if(inputshape){
         filteredData= filteredData.filter(ufoSighting => ufoSighting.shape === inputshape);
     }
 
